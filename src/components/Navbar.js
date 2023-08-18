@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom"
+
 const NavBar = () => {
    return (
       <nav className="navbar">
          <h1>The Dojo Blog</h1>
          <div className="links">
-            <a href="/">Home</a>
-            <a
-               href="/create"
+            <Link to="/">Home</Link>
+            <Link
+               to="/create"
                style={{
                   color: "white",
-                  backgroundColor: "#f1356d", //dont forget the # when using hexadecimals
+                  backgroundColor: "#f1356d",
                   borderRadius: "8px",
                }}
             >
                New Blog
-            </a>
+            </Link>
          </div>
       </nav>
    )
