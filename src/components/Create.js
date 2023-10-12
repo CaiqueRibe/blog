@@ -24,10 +24,8 @@ const Create = () => {
             setIsPending(false)
          })
       }, 1000)
-
       // history.go(-1) //gobackwards
       // history.go(1) //gofowards
-
       history.push("/") // push it back to the homepage
    }
 
